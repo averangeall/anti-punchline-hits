@@ -1,0 +1,60 @@
+<style>
+    body {
+        background: #ECF0F1;
+    }
+
+    .example-group {
+        padding: 10px;
+        background: #34B4DB;
+    }
+
+    .your-turn {
+        padding: 10px;
+        background: #3498DB;
+    }
+
+    #reaction {
+        font-size: 22px;
+    }
+</style>
+
+<div class="example-group">
+    <h1>Please read the following examples:</h1>
+
+    <div class="example-item">
+        <h2>Example 1:</h2>
+        <h3>You are a usual people, and you lost 30 pounds.</h3>
+        <p>Your reasonable reaction would be:</p>
+        <h3><strong>feel happy about it.</strong></h3>
+    </div>
+
+    <hr>
+
+    <div class="example-item">
+        <h2>Example 2:</h2>
+        <h3>You are a high school teacher, and you have less than a minute left of class.</h3>
+        <p>Your reasonable reaction would be:</p>
+        <h3><strong>early class dismiss.</strong></h3>
+    </div>
+
+    <hr>
+
+    <div class="example-item">
+        <h2>Example 3:</h2>
+        <h3>You are a usual people, and you are waiting in line to pay something.</h3>
+        <p>Your reasonable reaction would be:</p>
+        <h3><strong>just keep on waiting.</strong></h3>
+    </div>
+</div>
+
+<hr>
+
+<div class="your-turn">
+    <h1>Now, it's your turn!</h1>
+    <h2>Please enter a reasonable reaction to the following situation:</h2>
+    <h3>You are a ${role}, and&nbsp;${situation}.</h3>
+    <p>Your reasonable reaction would be:</p>
+    <p><input type="text" id="reaction" name="reaction" size="50" /></p>
+    <input type="hidden" name="meme_id" value="${meme_id}" />
+</div>
+
