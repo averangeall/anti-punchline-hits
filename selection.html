@@ -1,0 +1,142 @@
+<style>
+    body {
+        background: #ECF0F1;
+        font-family: "arial";
+    }
+
+    .example-group {
+        padding: 10px;
+        background: #f8f3b4;
+    }
+
+    .example-item {
+    }
+
+    .your-turn {
+        padding: 10px;
+        background: #f5ee94;
+    }
+
+    #reaction {
+        font-size: 22px;
+    }
+
+    .condition-box {
+        position: absolute;
+        border-style: solid;
+        border-width: 1px;
+        width: 300px;
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .opposite-whole {
+        position: relative;
+        height: 400px;
+    }
+
+    .set-up-line {
+        background: #f0f0f0;
+        left: 300px;
+    }
+
+    .anti-punchline {
+        background: #f3b3a7;
+        left: 60px;
+        top: 230px;
+    }
+
+    .punchline {
+        background: #f0f0f0;
+        left: 500px;
+        top: 230px;
+    }
+
+    .arrow {
+        position: absolute;
+        border-style: dashed;
+        border-color: transparent;
+        border-width: 0.53em;
+        display: -moz-inline-box;
+        display: inline-block;
+        font-size: 30px;
+        height: 0;
+        line-height: 0;
+        position: relative;
+        vertical-align: middle;
+        width: 0;
+    }
+
+    .left-arrow {
+        left: 10px;
+        top: 140px;
+        border-right-width: 1em;
+        border-right-style: solid;
+        border-right-color: #000000;
+        bottom: 0.25em;
+    }
+
+    .right-arrow {
+        left: 800px;
+        top: 140px;
+        border-left-width: 1em;
+        border-left-style: solid;
+        border-left-color: #000000;
+        bottom: 0.25em;
+    }
+
+    .arrow-line {
+        position: absolute;
+        left: 52px;
+        top: 145px;
+        display: block;
+        height: 3px;
+        width: 800px;
+        border: 0;
+        border-top: 3px solid #000000;
+    }
+</style>
+
+<div class="example-group">
+    <h1>Please read the following examples:</h1>
+
+    <div class="example-item">
+        <h2>Example 1:</h2>
+    </div>
+
+    <hr>
+
+    <div class="example-item">
+        <h2>Example 2:</h2>
+    </div>
+</div>
+
+<hr>
+
+<div class="your-turn">
+    <h1>Now, it's your turn!</h1>
+    <h2>Please choose a best <i>"normal"</i> reaction against the <i>"foul bachelor"</i> reaction:</h2>
+    <div class="opposite-whole">
+        <div class="set-up-line condition-box">
+            You have no pizza cutter for the frozen pizza you just cooked.
+        </div>
+        <div>
+            <hr class="arrow-line"></hr>
+            <span class="arrow left-arrow"></span>
+            <span class="arrow right-arrow"></span>
+        </div>
+        <div class="anti-punchline condition-box">
+            <ul>
+                <li>buy one.</li>
+                <li>try to find any substitute.</li>
+                <li>pick up the whole thing and eat it.</li>
+                <li>other:</li>
+            </ul>
+        </div>
+        <div class="punchline condition-box">
+            just fold it in half and now it's a pizza taco.
+        </div>
+        <input type="hidden" name="meme_id" value="${meme_id}" />
+    </div>
+</div>
+
