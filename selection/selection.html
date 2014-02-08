@@ -24,8 +24,8 @@
     .condition-box {
         position: absolute;
         border-style: solid;
-        border-width: 1px;
-        width: 300px;
+        border-width: 2px;
+        width: 282px;
         margin: 10px;
         padding: 10px;
     }
@@ -37,63 +37,38 @@
 
     .set-up-line {
         background: #f0f0f0;
-        left: 300px;
+        left: 194px;
+        top: 0;
     }
 
     .anti-punchline {
         background: #f3b3a7;
-        left: 60px;
-        top: 230px;
+        left: 44px;
+        top: 184px;
     }
 
     .punchline {
         background: #f0f0f0;
-        left: 500px;
-        top: 230px;
+        left: 363px;
+        top: 184px;
     }
 
-    .arrow {
+    .opposite-axis {
         position: absolute;
-        border-style: dashed;
-        border-color: transparent;
-        border-width: 0.53em;
-        display: -moz-inline-box;
-        display: inline-block;
-        font-size: 30px;
-        height: 0;
-        line-height: 0;
-        position: relative;
-        vertical-align: middle;
-        width: 0;
+        left: 50px;
+        top: 80px;
     }
 
-    .left-arrow {
-        left: 10px;
-        top: 140px;
-        border-right-width: 1em;
-        border-right-style: solid;
-        border-right-color: #000000;
-        bottom: 0.25em;
-    }
-
-    .right-arrow {
-        left: 800px;
-        top: 140px;
-        border-left-width: 1em;
-        border-left-style: solid;
-        border-left-color: #000000;
-        bottom: 0.25em;
-    }
-
-    .arrow-line {
+    .normal-direct {
         position: absolute;
-        left: 52px;
-        top: 145px;
-        display: block;
-        height: 3px;
-        width: 800px;
-        border: 0;
-        border-top: 3px solid #000000;
+        left: 68px;
+        top: 105px;
+    }
+
+    .meme-direct {
+        position: absolute;
+        left: 560px;
+        top: 105px;
     }
 </style>
 
@@ -120,18 +95,22 @@
         <div class="set-up-line condition-box">
             You have no pizza cutter for the frozen pizza you just cooked.
         </div>
-        <div>
-            <hr class="arrow-line"></hr>
-            <span class="arrow left-arrow"></span>
-            <span class="arrow right-arrow"></span>
+        <div class="opposite-axis">
+            <img src="hit-2-example.png" />
+        </div>
+        <div class="normal-direct">
+            <b>Normal People</b>
+        </div>
+        <div class="meme-direct">
+            <b>Foul Bachelor</b>
         </div>
         <div class="anti-punchline condition-box">
-            <ul>
-                <li>buy one.</li>
-                <li>try to find any substitute.</li>
-                <li>pick up the whole thing and eat it.</li>
-                <li>other:</li>
-            </ul>
+            <form>
+                <input type="radio" name="anti-punchline" value="choice-1">buy one.</input><br />
+                <input type="radio" name="anti-punchline" value="choice-2">try to find any substitute.</input><br />
+                <input type="radio" name="anti-punchline" value="choice-3">pick up the whole thing and eat it.</input><br />
+                <input type="radio" name="anti-punchline" value="choice-other">other:</input><br />
+            </form>
         </div>
         <div class="punchline condition-box">
             just fold it in half and now it's a pizza taco.
