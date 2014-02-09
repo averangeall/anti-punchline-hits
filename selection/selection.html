@@ -32,7 +32,7 @@
 
     .opposite-whole {
         position: relative;
-        height: 400px;
+        height: 350px;
     }
 
     .set-up-line {
@@ -70,6 +70,22 @@
         left: 560px;
         top: 105px;
     }
+
+    .choices-block {
+        padding-left: 23px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .answer-block {
+        padding-left: 30px;
+        padding-bottom: 50px;
+        font-size: 22px;
+    }
+
+    #ap-text {
+        font-size: 22px;
+    }
 </style>
 
 <div class="example-group">
@@ -77,12 +93,76 @@
 
     <div class="example-item">
         <h2>Example 1:</h2>
+        <h2>Please choose a best <i>"normal"</i> reaction against the <i>"foul bachelor"</i> reaction:</h2>
+        <div class="opposite-whole">
+            <div class="set-up-line condition-box">
+                You have no pizza cutter for the frozen pizza you just cooked.
+            </div>
+            <div class="opposite-axis">
+                <img src="http://www.csie.ntu.edu.tw/~r01944018/anti-punchline/hit-2-example.png" />
+            </div>
+            <div class="normal-direct">
+                <b>Normal People</b>
+            </div>
+            <div class="meme-direct">
+                <b>Foul Bachelor</b>
+            </div>
+            <div class="anti-punchline condition-box">
+                <ol class="choices-block">
+                    <li>buy one.</li>
+                    <li>try to find any substitute.</li>
+                    <li>pick up the whole thing and eat it.</li>
+                    <li>other: _____________________</li>
+                </ol>
+            </div>
+            <div class="punchline condition-box">
+                just fold it in half and now it's a pizza taco.
+            </div>
+        </div>
+        <div class="answer-block">
+            <h4>Example Answer:</h4>
+            <ol start="2">
+                <li>try to find any substitute.</li>
+            </ol>
+        </div>
     </div>
 
     <hr>
 
     <div class="example-item">
         <h2>Example 2:</h2>
+        <h2>Please choose a best <i>"normal"</i> reaction against the <i>"foul bachelor"</i> reaction:</h2>
+        <div class="opposite-whole">
+            <div class="set-up-line condition-box">
+                You have no pizza cutter for the frozen pizza you just cooked.
+            </div>
+            <div class="opposite-axis">
+                <img src="http://www.csie.ntu.edu.tw/~r01944018/anti-punchline/hit-2-example.png" />
+            </div>
+            <div class="normal-direct">
+                <b>Normal People</b>
+            </div>
+            <div class="meme-direct">
+                <b>Foul Bachelor</b>
+            </div>
+            <div class="anti-punchline condition-box">
+                <ol class="choices-block">
+                    <li>buy one.</li>
+                    <li>try to find any substitute.</li>
+                    <li>pick up the whole thing and eat it.</li>
+                    <li>other: _____________________</li>
+                </ol>
+            </div>
+            <div class="punchline condition-box">
+                just fold it in half and now it's a pizza taco.
+            </div>
+        </div>
+        <div class="answer-block">
+            <h4>Example Answer:</h4>
+            <ol start="4">
+                <li>other: <u>try to find any substitute.</u></li>
+            </ol>
+        </div>
     </div>
 </div>
 
@@ -96,7 +176,7 @@
             You have no pizza cutter for the frozen pizza you just cooked.
         </div>
         <div class="opposite-axis">
-            <img src="hit-2-example.png" />
+            <img src="http://www.csie.ntu.edu.tw/~r01944018/anti-punchline/hit-2-example.png" />
         </div>
         <div class="normal-direct">
             <b>Normal People</b>
@@ -105,17 +185,27 @@
             <b>Foul Bachelor</b>
         </div>
         <div class="anti-punchline condition-box">
-            <form>
-                <input type="radio" name="anti-punchline" value="choice-1">buy one.</input><br />
-                <input type="radio" name="anti-punchline" value="choice-2">try to find any substitute.</input><br />
-                <input type="radio" name="anti-punchline" value="choice-3">pick up the whole thing and eat it.</input><br />
-                <input type="radio" name="anti-punchline" value="choice-other">other:</input><br />
-            </form>
+            <ol class="choices-block">
+                <li>buy one.</li>
+                <li>try to find any substitute.</li>
+                <li>pick up the whole thing and eat it.</li>
+                <li>other: _____________________</li>
+            </ol>
         </div>
         <div class="punchline condition-box">
             just fold it in half and now it's a pizza taco.
         </div>
-        <input type="hidden" name="meme_id" value="${meme_id}" />
+    </div>
+    <div class="answer-block">
+        <h3>Your Answer:</h3>
+        <ol>
+            <li><input type="radio" name="ap-choice" value="choice-1">buy one.</input></li>
+            <li><input type="radio" name="ap-choice" value="choice-1">try to find any substitute.</input></li>
+            <li><input type="radio" name="ap-choice" value="choice-3">pick up the whole thing and eat it.</input></li>
+            <li><input type="radio" name="ap-choice" value="choice-other">other:</input>
+            <input type="text" name="ap-text" id="ap-text" size="50" /></li>
+            <input type="hidden" name="meme_id" value="${meme_id}" />
+        </ol>
     </div>
 </div>
 
