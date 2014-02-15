@@ -1,61 +1,63 @@
 <style>
     body {
-        background: #ECF0F1;
-        font-family: "arial";
-    }
-
-    .example-group {
-        padding: 10px;
-        background: #c1dad6;
-    }
-
-    .your-turn {
-        padding: 10px;
         background: #90bdb6;
+        font-family: 'Crimson Text', Garamond,Georgia, 'Times New Roman', serif;
+    }
+
+    .content-block {
+        padding: 10px;
+        background: #dae9e6;
+        max-width: 900px;
+        margin: 0 auto;
     }
 
     #reaction {
+        font-family: 'Crimson Text', Garamond,Georgia, 'Times New Roman', serif;
         font-size: 22px;
+    }
+
+    .item-header {
+        border-bottom: 1px solid #90bdb6;
+    }
+
+    .task-item {
+        margin-bottom: 50px;
     }
 </style>
 
-<div class="example-group">
-    <h1>Please read the following examples:</h1>
+<div class="content-block">
+    <p>Please read the following examples first:</p>
 
-    <div class="example-item">
-        <h2>Example 1:</h2>
-        <h3>You are a usual people, and you lost 30 pounds.</h3>
-        <p>Your reasonable reaction would be:</p>
-        <h3><strong>feel happy about it.</strong></h3>
+    <div class="task-item">
+        <h2 class="item-header">Reasonable Example 1:</h2>
+        <p>Please imagine yourself in such situation:</p>
+        <p><strong>You are a usual people, and you lost 30 pounds.</strong></p>
+        <p>Your reasonable reaction might be:</p>
+        <p><strong>feel happy about it.</strong></p>
     </div>
 
-    <hr>
-
-    <div class="example-item">
-        <h2>Example 2:</h2>
-        <h3>You are a high school teacher, and you have less than a minute left of class.</h3>
-        <p>Your reasonable reaction would be:</p>
-        <h3><strong>early class dismiss.</strong></h3>
+    <div class="task-item">
+        <h2 class="item-header">Reasonable Example 2:</h2>
+        <p>Please imagine yourself in such situation:</p>
+        <p><strong>You are a high school teacher, and you have less than a minute left of class.</strong></p>
+        <p>Your reasonable reaction might be:</p>
+        <p><strong>early class dismiss.</strong></p>
     </div>
 
-    <hr>
-
-    <div class="example-item">
-        <h2>Example 3:</h2>
-        <h3>You are a usual people, and you are waiting in line to pay something.</h3>
-        <p>Your reasonable reaction would be:</p>
-        <h3><strong>just keep on waiting.</strong></h3>
+    <div class="task-item">
+        <h2 class="item-header">Reasonable Example 3:</h2>
+        <p>Please imagine yourself in such situation:</p>
+        <p><strong>You are a usual people, and you are waiting in line to pay something.</strong></p>
+        <p>Your reasonable reaction might be:</p>
+        <p><strong>just keep on waiting.</strong></p>
     </div>
-</div>
 
-<hr>
-
-<div class="your-turn">
-    <h1>Now, it's your turn!</h1>
-    <h2>Please enter a reasonable reaction to the following situation:</h2>
-    <h3>You are a ${role}, and ${situation}.</h3>
-    <p>Your reasonable reaction would be:</p>
-    <p><input type="text" id="reaction" name="reaction" size="50" /></p>
-    <input type="hidden" name="meme_id" value="${meme_id}" />
+    <div class="task-item">
+        <h2 class="item-header">Now, It's Your Turn!</h2>
+        <p>Please imagine yourself in such situation:</p>
+        <p><strong>You are a ${role}, and ${situation}.</strong></p>
+        <p>Your reasonable reaction is:</p>
+        <p><input type="text" id="reaction" name="reaction" size="50" /></p>
+    </div>
 </div>
 
