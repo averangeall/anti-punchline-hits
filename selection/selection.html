@@ -1,24 +1,22 @@
 <style>
     body {
-        background: #ECF0F1;
-        font-family: "arial";
-    }
-
-    .example-group {
-        padding: 10px;
-        background: #f8f3b4;
-    }
-
-    .example-item {
-    }
-
-    .your-turn {
-        padding: 10px;
         background: #f5ee94;
+        font-family: 'Crimson Text', Garamond,Georgia, 'Times New Roman', serif;
     }
 
-    #reaction {
-        font-size: 22px;
+    .content-block {
+        padding: 10px;
+        background: #fbf8d4;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .task-item {
+        margin-bottom: 50px;
+    }
+
+    .item-header {
+        border-bottom: 1px solid #c4be76;
     }
 
     .condition-box {
@@ -42,13 +40,13 @@
     }
 
     .anti-punchline {
-        background: #f3b3a7;
+        background: #f5ee94;
         left: 44px;
         top: 184px;
     }
 
     .punchline {
-        background: #f0f0f0;
+        background: #f3b3a7;
         left: 363px;
         top: 184px;
     }
@@ -61,14 +59,24 @@
 
     .normal-direct {
         position: absolute;
-        left: 68px;
+        right: 724px;
         top: 105px;
+        color: #6e692f;
     }
 
     .meme-direct {
         position: absolute;
         left: 560px;
         top: 105px;
+        color: #a02522;
+    }
+
+    .normal-desc {
+        color: #6e692f;
+    }
+
+    .meme-desc {
+        color: #a02522;
     }
 
     .choices-block {
@@ -80,132 +88,168 @@
     .answer-block {
         padding-left: 30px;
         padding-bottom: 50px;
+    }
+
+    .answer-block ol {
         font-size: 22px;
     }
 
     #ap-text {
         font-size: 22px;
+        font-family: 'Crimson Text', Garamond,Georgia, 'Times New Roman', serif;
     }
 </style>
 
-<div class="example-group">
-    <h1>Please read the following examples:</h1>
+<div class="content-block">
+    <p>Please read the following examples first:</p>
 
-    <div class="example-item">
-        <h2>Example 1:</h2>
-        <h2>Please choose a best <i>"normal"</i> reaction against the <i>"foul bachelor"</i> reaction:</h2>
+    <div class="task-item">
+        <h2 class="item-header">Example 1:</h2>
+        <p><strong>Please choose a best <i class="normal-desc">"Normal Person"</i> reaction opposite against the <i class="meme-desc">"Lonely Person"</i> reaction:</strong></p>
         <div class="opposite-whole">
             <div class="set-up-line condition-box">
-                You have no pizza cutter for the frozen pizza you just cooked.
+                You forgot to put phone on silent in class.
             </div>
             <div class="opposite-axis">
                 <img src="http://www.csie.ntu.edu.tw/~r01944018/anti-punchline/hit-2-example.png" />
             </div>
             <div class="normal-direct">
-                <b>Normal People</b>
+                <b>Normal Person</b>
             </div>
             <div class="meme-direct">
-                <b>Foul Bachelor</b>
+                <b>Lonely Person</b>
             </div>
             <div class="anti-punchline condition-box">
                 <ol class="choices-block">
-                    <li>buy one.</li>
-                    <li>try to find any substitute.</li>
-                    <li>pick up the whole thing and eat it.</li>
-                    <li>other: _____________________</li>
+                    <li>It didn't ring.</li>
+                    <li>Concentrate in class.</li>
+                    <li>Someone called me and it rang very loudly.</li>
+                    <li>Other: __________________</li>
                 </ol>
             </div>
             <div class="punchline condition-box">
-                just fold it in half and now it's a pizza taco.
+                Didn't matter.
             </div>
         </div>
         <div class="answer-block">
-            <h4>Example Answer:</h4>
-            <ol start="2">
-                <li>try to find any substitute.</li>
+            <p><strong>You might choose this answer to be opposite:</strong></p>
+            <ol start="3">
+                <li>Someone called me and it rang very loudly.</li>
             </ol>
         </div>
     </div>
 
-    <hr>
-
-    <div class="example-item">
-        <h2>Example 2:</h2>
-        <h2>Please choose a best <i>"normal"</i> reaction against the <i>"foul bachelor"</i> reaction:</h2>
+    <div class="task-item">
+        <h2 class="item-header">Example 2:</h2>
+        <p><strong>Please choose a best <i class="normal-desc">"Normal Teacher"</i> reaction opposite against the <i class="meme-desc">"Scumbag People"</i> reaction:</strong></p>
         <div class="opposite-whole">
             <div class="set-up-line condition-box">
-                You have no pizza cutter for the frozen pizza you just cooked.
+                Doesn't agree with someone's approach on a project.
             </div>
             <div class="opposite-axis">
                 <img src="http://www.csie.ntu.edu.tw/~r01944018/anti-punchline/hit-2-example.png" />
             </div>
             <div class="normal-direct">
-                <b>Normal People</b>
+                <b>Normal Person</b>
             </div>
             <div class="meme-direct">
-                <b>Foul Bachelor</b>
+                <b>Scumbag Person</b>
             </div>
             <div class="anti-punchline condition-box">
                 <ol class="choices-block">
-                    <li>buy one.</li>
-                    <li>try to find any substitute.</li>
-                    <li>pick up the whole thing and eat it.</li>
-                    <li>other: _____________________</li>
+                    <li>Yell at him.</li>
+                    <li>Don't talk to him anymore.</li>
+                    <li>Mad at him.</li>
+                    <li>Other: __________________</li>
                 </ol>
             </div>
             <div class="punchline condition-box">
-                just fold it in half and now it's a pizza taco.
+                Complain to his boss.
             </div>
         </div>
         <div class="answer-block">
-            <h4>Example Answer:</h4>
+            <p><strong>You might choose this answer to be opposite:</strong></p>
             <ol start="4">
-                <li>other: <u>try to find any substitute.</u></li>
+                <li>other: <u>Confront him directly.</u></li>
             </ol>
         </div>
     </div>
-</div>
 
-<hr>
-
-<div class="your-turn">
-    <h1>Now, it's your turn!</h1>
-    <h2>Please choose a best <i>"normal"</i> reaction against the <i>"foul bachelor"</i> reaction:</h2>
-    <div class="opposite-whole">
-        <div class="set-up-line condition-box">
-            You have no pizza cutter for the frozen pizza you just cooked.
+    <div class="task-item">
+        <h2 class="item-header">Example 3:</h2>
+        <p><strong>Please choose a best <i class="normal-desc">"Normal High School Teacher"</i> reaction opposite against the <i class="meme-desc">"Bad High School Teacher"</i> reaction:</strong></p>
+        <div class="opposite-whole">
+            <div class="set-up-line condition-box">
+                You said "there are no wrong interpretations in art."
+            </div>
+            <div class="opposite-axis">
+                <img src="http://www.csie.ntu.edu.tw/~r01944018/anti-punchline/hit-2-example.png" />
+            </div>
+            <div class="normal-direct">
+                <b>Normal High School Teacher</b>
+            </div>
+            <div class="meme-direct">
+                <b>Bad High School Teacher</b>
+            </div>
+            <div class="anti-punchline condition-box">
+                <ol class="choices-block">
+                    <li>Interpret some arts in my own opinion to my students.</li>
+                    <li>Accept anything my students said.</li>
+                    <li>Teach art history.</li>
+                    <li>Other: __________________</li>
+                </ol>
+            </div>
+            <div class="punchline condition-box">
+                Then said "Sorry, that's not what Van Gogh was trying to convey."
+            </div>
         </div>
-        <div class="opposite-axis">
-            <img src="http://www.csie.ntu.edu.tw/~r01944018/anti-punchline/hit-2-example.png" />
-        </div>
-        <div class="normal-direct">
-            <b>Normal People</b>
-        </div>
-        <div class="meme-direct">
-            <b>Foul Bachelor</b>
-        </div>
-        <div class="anti-punchline condition-box">
-            <ol class="choices-block">
-                <li>buy one.</li>
-                <li>try to find any substitute.</li>
-                <li>pick up the whole thing and eat it.</li>
-                <li>other: _____________________</li>
+        <div class="answer-block">
+            <p><strong>You might choose this answer to be opposite:</strong></p>
+            <ol start="2">
+                <li>Accept anything my students said.</li>
             </ol>
         </div>
-        <div class="punchline condition-box">
-            just fold it in half and now it's a pizza taco.
+    </div>
+
+    <div class="task-item">
+        <h2 class="item-header">Now, it's your turn!</h2>
+        <p><strong>Please choose a best <i class="normal-desc">"${normal_subject}"</i> reaction opposite against the <i class="meme-desc">"${meme_subject}"</i> reaction:</strong></p>
+        <div class="opposite-whole">
+            <div class="set-up-line condition-box">
+                ${situation}
+            </div>
+            <div class="opposite-axis">
+                <img src="http://www.csie.ntu.edu.tw/~r01944018/anti-punchline/hit-2-example.png" />
+            </div>
+            <div class="normal-direct">
+                <b>${normal_subject}</b>
+            </div>
+            <div class="meme-direct">
+                <b>${meme_subject}</b>
+            </div>
+            <div class="anti-punchline condition-box">
+                <ol class="choices-block">
+                    <li>${reaction_1}</li>
+                    <li>${reaction_2}</li>
+                    <li>${reaction_3}</li>
+                    <li>other: _____________________</li>
+                </ol>
+            </div>
+            <div class="punchline condition-box">
+                ${punchline}
+            </div>
+        </div>
+        <div class="answer-block">
+            <h3>Your Answer:</h3>
+            <ol>
+                <li><input type="radio" name="ap-choice" value="choice-1">${reaction_1}</input></li>
+                <li><input type="radio" name="ap-choice" value="choice-2">${reaction_2}</input></li>
+                <li><input type="radio" name="ap-choice" value="choice-3">${reaction_3}</input></li>
+                <li><input type="radio" name="ap-choice" value="choice-other">other:</input>
+                <input type="text" name="ap-text" id="ap-text" size="50" /></li>
+            </ol>
         </div>
     </div>
-    <div class="answer-block">
-        <h3>Your Answer:</h3>
-        <ol>
-            <li><input type="radio" name="ap-choice" value="choice-1">buy one.</input></li>
-            <li><input type="radio" name="ap-choice" value="choice-1">try to find any substitute.</input></li>
-            <li><input type="radio" name="ap-choice" value="choice-3">pick up the whole thing and eat it.</input></li>
-            <li><input type="radio" name="ap-choice" value="choice-other">other:</input>
-            <input type="text" name="ap-text" id="ap-text" size="50" /></li>
-            <input type="hidden" name="meme_id" value="${meme_id}" />
-        </ol>
-    </div>
+
 </div>
 
