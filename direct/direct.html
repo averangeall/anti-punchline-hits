@@ -1,0 +1,111 @@
+<style>
+    body {
+        background: #7a97b5;
+        font-family: 'Crimson Text', Garamond,Georgia, 'Times New Roman', serif;
+    }
+
+    .content-block {
+        padding: 10px;
+        background: #c5d2df;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    #reaction {
+        font-family: 'Crimson Text', Garamond,Georgia, 'Times New Roman', serif;
+        font-size: 22px;
+    }
+
+    .item-header {
+        border-bottom: 1px solid #7a97b5;
+    }
+
+    .task-item {
+        margin-bottom: 50px;
+    }
+
+    .meme-image {
+        max-width: 400px;
+    }
+
+    .explain {
+        padding-left: 20px;
+        font-size: 18px;
+    }
+</style>
+
+<div class="content-block">
+    <p>Please read the following examples first:</p>
+
+    <div class="task-item">
+        <h2 class="item-header">Explanation Example 1:</h2>
+        <table>
+            <tr>
+                <td>
+                    <img src="http://www.csie.ntu.edu.tw/~r01944018/anti-punchline/a1AQj7b.jpg" class="meme-image" />
+                </td>
+                <td class="explain">
+                    <p>This is "bad luck brian". The captions describe a variety of embarrassing and tragic occurrences.</p>
+                    <p>In this meme, he stays up for 40 hours studying for a final.</p>
+                    <p><u><b>You may expect that he will pass the exam.</b></u></p>
+                    <p>However, it turned out that he falls asleep and missed exam.</p>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="task-item">
+        <h2 class="item-header">Explanation Example 2:</h2>
+        <table>
+            <tr>
+                <td>
+                    <img src="http://www.csie.ntu.edu.tw/~r01944018/anti-punchline/aKz3XVW.jpg" class="meme-image" />
+                </td>
+                <td class="explain">
+                    <p>This is "first world problems". They are frustrations and complaints that are only experienced by privileged individuals in wealthy countries.</p>
+                    <p>In this meme, she feels volume 1 is too loud.</p>
+                    <p><u><b>You may expect that she will lower the volume to 0.</b></u></p>
+                    <p>However, it turned out that volume 0 is no sound.</p>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="task-item">
+        <h2 class="item-header">Explanation Example 3:</h2>
+        <table>
+            <tr>
+                <td>
+                    <img src="http://www.csie.ntu.edu.tw/~r01944018/anti-punchline/a75K2Pr.jpg" class="meme-image" />
+                </td>
+                <td class="explain">
+                    <p>This is "success kid". It has been used in image macros to designate success.</p>
+                    <p>In this meme, he ordered wrong thing at drive-thru.</p>
+                    <p><u><b>You may expect that he will get the wrong thing.</b></u></p>
+                    <p>However, it turned out that they misunderstood him and he got what he wanted.</p>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="task-item">
+        <h2 class="item-header">Now, It's Your Turn!</h2>
+        <table>
+            <tr>
+                <td>
+                    <img src="http://www.csie.ntu.edu.tw/~r01944018/anti-punchline/${gag_id}.jpg" class="meme-image" />
+                </td>
+                <td class="explain">
+                    <p>${first_move_line}</p>
+                    <p>${second_move_line}</p>
+                    <p><u><b>You may expect that...</b></u></p>
+                    <p>${fourth_move_line}</p>
+                </td>
+            </tr>
+        </table>
+
+        <h3>Please Finish the explanation:</h3>
+        <p><u><b>You may expect that </b></u><input type="text" name="third_move_line" /></p>
+    </div>
+</div>
+
